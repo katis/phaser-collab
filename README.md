@@ -16,7 +16,7 @@ open http://localhost:8080/<SceneX.html> to see it running.
 ## Browser refresh
 
 If you want to refresh the browser with a keyboard shortcut in VSCode, there are
-tasks `refresh-x` in `.vscode/tasks.json`, which you can bind to with:
+tasks `refresh-x` in `.vscode/tasks.json`, which you can bind to by adding a keyboard shortcut to your VSCode settings:
 
 ```json
 {
