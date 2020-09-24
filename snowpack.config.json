@@ -1,0 +1,15 @@
+{
+  "devOptions": {
+    "hmr": false
+  },
+  "plugins": [
+    [
+      "@snowpack/plugin-run-script",
+      { "cmd": "tsc --noEmit", "watch": "$1 --watch" }
+    ],
+    [
+      "@snowpack/plugin-run-script",
+      { "cmd": "echo \"\"", "watch": "node ./scripts/refresh-server.js" }
+    ]
+  ]
+}
