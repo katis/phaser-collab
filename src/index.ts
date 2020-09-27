@@ -1,9 +1,8 @@
-import { Types } from "phaser";
 import { GameScene } from "./scenes/gameScene";
 import { MenuScene } from "./scenes/menuScene";
 
 export function startGame() {
-  const config: Types.Core.GameConfig = {
+  const config: Phaser.Types.Core.GameConfig = {
     title: "Phaser game",
     scale: {
       width: 800,
