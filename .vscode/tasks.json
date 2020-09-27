@@ -30,6 +30,17 @@
         "showReuseMessage": true,
         "clear": false
       }
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev",
+      "detail": "snowpack dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }

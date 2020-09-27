@@ -1,5 +1,8 @@
+import { GameScene } from "./scenes/gameScene";
+import { MenuScene } from "./scenes/menuScene";
+
 export function startGame() {
-  const config = {
+  const config: Phaser.Types.Core.GameConfig = {
     title: "Phaser game",
     scale: {
       width: 800,
@@ -13,19 +16,8 @@ export function startGame() {
     },
     parent: "game",
     backgroundColor: "#0f0f0f",
-    scene: new GameScene(),
+    scene: [MenuScene],
   };
 
   return new Phaser.Game(config);
-}
-
-export class GameScene extends Phaser.Scene {
-  constructor() {
-    super({ active: false, visible: false });
-    console.log("game", this.game);
-  }
-
-  update() {
-    this.cameras.main.setBackgroundColor("#000000");
-  }
 }

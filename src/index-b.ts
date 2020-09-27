@@ -1,5 +1,5 @@
 export function startGame() {
-  const config = {
+  const config: Phaser.Types.Core.GameConfig = {
     title: "Phaser game",
     scale: {
       width: 800,
